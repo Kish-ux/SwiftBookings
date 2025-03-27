@@ -46,4 +46,14 @@ function displayFlights(flights) {
     const flightList = document.getElementById("flight-list");
     flightList.innerHTML = ""; // Clear previous results
 
-    
+    if (flights.length === 0) {
+        flightList.innerHTML = "<li>No flights available</li>";
+    } else {
+        flights.forEach(flight => {
+            const flightItem = document.createElement("li");
+            flightItem.innerHTML = `
+                <strong>Flight ${flight.flightNumber}</strong><br>
+                Departure: ${flight.departureTime}<br>
+                Arrival: ${flight.arrivalTime}<br>
+                Price: ${flight.price}
+            `;
