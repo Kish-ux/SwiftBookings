@@ -57,3 +57,7 @@ function displayFlights(flights) {
                 Arrival: ${flight.arrivalTime}<br>
                 Price: ${flight.price}
             `;
+            flightList.appendChild(flightItem);
+        });
+    }
+}
