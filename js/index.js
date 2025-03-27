@@ -8,3 +8,8 @@ document.getElementById("flight-form").addEventListener("submit", function(e) {
      const returnDate = document.getElementById("return-date").value;
      const passengers = document.getElementById("passengers").value;
  
+      // Validate inputs
+    if (!from || !to || !departureDate || !passengers) {
+        alert("Please fill in all required fields.");
+        return;
+    }
