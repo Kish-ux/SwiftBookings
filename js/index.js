@@ -36,3 +36,14 @@ document.getElementById("flight-form").addEventListener("submit", function(e) {
             arrivalTime: "9:00 PM",
             price: "$275",
         },
+    ];
+
+    // Display results
+    displayFlights(mockFlights);
+});
+
+function displayFlights(flights) {
+    const flightList = document.getElementById("flight-list");
+    flightList.innerHTML = ""; // Clear previous results
+
+    
