@@ -1,0 +1,43 @@
+{
+    "flights": [
+      {
+        "id": 1,
+        "airline": "American Airlines",
+        "flightNumber": "AA101",
+        "from": "NYC",
+        "to": "LAX",
+        "departureDate": "2023-12-15",
+        "departureTime": "10:00 AM",
+        "arrivalTime": "1:00 PM",
+        "duration": "6h 0m",
+        "price": 250,
+        "seatsAvailable": 12
+      },
+      {
+        "id": 2,
+        "airline": "United Airlines",
+        "flightNumber": "UA202",
+        "from": "NYC",
+        "to": "LAX",
+        "departureDate": "2023-12-15",
+        "departureTime": "2:00 PM",
+        "arrivalTime": "5:00 PM",
+        "duration": "6h 0m",
+        "price": 300,
+        "seatsAvailable": 8
+      },
+      {
+        "id": 3,
+        "airline": "Delta Airlines",
+        "flightNumber": "DL303",
+        "from": "NYC",
+        "to": "LAX",
+        "departureDate": "2023-12-15",
+        "departureTime": "6:00 PM",
+        "arrivalTime": "9:00 PM",
+        "duration": "6h 0m",
+        "price": 275,
+        "seatsAvailable": 5
+      }
+    ]
+  }

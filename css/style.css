@@ -5,14 +5,14 @@
     padding: 18px;
 }
 
- .navbar, h1 {
+.navbar, h1 {
     margin: auto;
     text-align: center;
-    color:white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
- img{
+.img{
     border-radius: 50%;
     width: 180px;
     height: 180px;
@@ -21,7 +21,7 @@
 #background {
     border-radius: 0;
     margin: 0;
-    background-image: url(./images/Gallery\ of\ Regeneration\ of\ Taoyuan\ International\ Airport\ Terminal\ 1\ _\ Norihiko\ Dan\ and\ Associates\ \ -\ 3.jpeg);
+    background-image: url("./images/Gallery\ of\ Regeneration\ of\ Taoyuan\ International\ Airport\ Terminal\ 1\ _\ Norihiko\ Dan\ and\ Associates\ \ -\ 3.jpeg");
     background-size: cover; 
     background-position: center;
     height: 400px;
@@ -34,7 +34,7 @@
 }
 button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #38863a;
     color: white;
     border: none;
     border-radius: 5px;
@@ -55,3 +55,7 @@ button:hover {
     display: none; /* Initially hidden */
 }
 
+#container{
+    display: flex;
+    align-content: center;
+}
