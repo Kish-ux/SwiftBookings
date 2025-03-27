@@ -13,3 +13,12 @@ document.getElementById("flight-form").addEventListener("submit", function(e) {
         alert("Please fill in all required fields.");
         return;
     }
+
+    // Mock flight data (replace with actual API call for real data)
+    const mockFlights = [
+        {
+            flightNumber: "AA101",
+            departureTime: "10:00 AM",
+            arrivalTime: "1:00 PM",
+            price: "$250",
+        },
