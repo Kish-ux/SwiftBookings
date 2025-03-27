@@ -29,3 +29,10 @@ document.getElementById("flight-form").addEventListener("submit", function(e) {
             arrivalTime: "5:00 PM",
             price: "$300",
         },
+
+        {
+            flightNumber: "DL303",
+            departureTime: "6:00 PM",
+            arrivalTime: "9:00 PM",
+            price: "$275",
+        },
