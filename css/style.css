@@ -1,6 +1,9 @@
+#Body{
+    background-image: url("https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBsYW5lfGVufDB8fDB8fHww");
+}
 .navbar {
     display: flex;
-    background-color: brown;
+    background-color: grey;
     border-radius: 12px;
     padding: 18px;
 }
@@ -9,13 +12,13 @@
     margin: auto;
     text-align: center;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
 }
 
 .img{
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
+    border-radius: 0%;
+    width: 10px;
+    height: 10px;
 }
 
 #background {
@@ -29,8 +32,9 @@
 }
 
 .form-group {
-    background-color: antiquewhite;
-    background-position: 50% ;
+    display: flex;
+    font-style: oblique;
+    font-size: large;
 }
 button {
     padding: 10px 20px;
