@@ -22,3 +22,10 @@ document.getElementById("flight-form").addEventListener("submit", function(e) {
             arrivalTime: "1:00 PM",
             price: "$250",
         },
+
+        {
+            flightNumber: "UA202",
+            departureTime: "2:00 PM",
+            arrivalTime: "5:00 PM",
+            price: "$300",
+        },
