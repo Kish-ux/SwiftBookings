@@ -1,77 +1,103 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SWIFTBOOKINGS</title>
-    <link rel ="stylesheet" href="css/style.css">
-</head>   
-<body id="Body">
-    <div class = "navbar">
-        <img src = "https://i.pinimg.com/1200x/8b/e2/5d/8be25d5d9c16d3248b08313b4062d40f.jpg" alt = "flight">
-        <h1>SWIFTBOOKINGS</h1>        
-    </div>
-    <h2>Tickets Up For Booking</h2>
-
+    <title>SwiftBookings - Flight Ticket Reservation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+    <header>
+        <div class="navbar">
+            <img src="https://i.pinimg.com/1200x/8b/e2/5d/8be25d5d9c16d3248b08313b4062d40f.jpg" alt="SwiftBookings Logo">
+            <h1>SWIFTBOOKINGS</h1>
+        </div>
     </header>
+
     <main>
-        <section id="background">
-            <section id ="search-section">
-            <input type="text"
-            id ="event-name" placeholder="Find Tickets">
-            <button> Find Tickets</button>
-        </section>
-        <section id="results"> 
-            <h2>Available Tickets</h2>
-            <div id="tickets-results"></div>
-         </section>
-         <section id="container"></section>
-         <form id="flight-form">
-            <div class="form-group">
-                <label for="from">From:</label>
-                <input list="cities" type="text" id="from" name="from" placeholder="Departure city" required>
-                <datalist id="cities">
-                    <option value="Malaysia">
-                    <option value="Nairobi">
-                    <option value="Maldives">
-                    <option value="Las Vegas">
-                    <option value="Nairobi">
-                    <option value="Thailand">
-                    
-                </datalist>
-            </div>
-            <div class="form-group">
-                <label for="to">To:</label>
-                <input list="cities" type="text" id="to" name="to" placeholder="Destination city" required>
-                <datalist id="cities">
-                    <option value="New York">
-                    <option value="Los Angeles">
-                    <option value="Chicago">
-                    <option value="San Francisco">
-                    <option value="Miami">
-                    <option value="Boston">
-                    
-                </datalist>
-            </div>
+        <button type="submit" id="search-flights">Search Flights</button>
+        <section id="search-section">
+            <h2>Tickets Up For Booking</h2>
             
-            <div class="form-group">
-                <label for="departure-date">Departure Date:</label>
-                <input type="date" id="departure-date" name="departure-date" required>
-            </div>
-            <div class="form-group">
-                <label for="return-date">Return Date (optional):</label>
-                <input type="date" id="return-date" name="return-date">
-            </div>
-            <div class="form-group">
-                <label for="passengers">Passengers:</label>
-                <input type="number" id="passengers" name="passengers" min="1" value="1" required>
-            </section>
-            </div>
+
+            <form id="flight-form">
+                <div class="form-group">
+                    <label for="from">From:</label>
+                    <input list="departure-cities" type="text" id="from" name="from" placeholder="Departure city" required>
+                    <datalist id="departure-cities">
+                        <option value="Malaysia">
+                        <option value="Nairobi">
+                        <option value="Maldives">
+                        <option value="Las Vegas">
+                        <option value="Thailand">
+                    </datalist>
+                </div>
+
+                <div class="form-group">
+                    <label for="to">To:</label>
+                    <input list="destination-cities" type="text" id="to" name="to" placeholder="Destination city" required>
+                    <datalist id="destination-cities">
+                        <option value="New York">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                        <option value="San Francisco">
+                        <option value="Miami">
+                        <option value="Boston">
+                    </datalist>
+                </div>
+                
+                <div class="form-group">
+                    <label for="departure-date">Departure Date:</label>
+                    <input type="date" id="departure-date" name="departure-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="return-date">Return Date (optional):</label>
+                    <input type="date" id="return-date" name="return-date">
+                </div>
+
+                <div class="form-group">
+                    <label for="passengers">Passengers:</label>
+                    <input type="number" id="passengers" name="passengers" min="1" max="10" value="1" required>
+                </div>
+
+                <div class="price-filter">
+                    <h3>Price Range Filter</h3>
+                    <label>
+                        <input name="commercial-class" value="commercial-class"> 
+                        <input type="checkbox" name="price-filter" value="0-200"> $0 - $200
+                        
+                    </label>
+                    <label>
+                        <input name="economy-class" value="economy-class">
+                        <input type="checkbox" name="price-filter" value="200-250"> $200 - $250
+                    </label>
+                    <label>
+                        <input name="business-class" value="business-class"> 
+                        <input type="checkbox" name="price-filter" value="250-300"> $250 - $300
+                    </label>
+                    <label>
+                        <input name="first-class" value="first-class"> 
+                        <input type="checkbox" name="price-filter" value="300-500"> $300 - $500
+                    </label>
+                </div>
+
+                <button type="submit" id="search-flights">Search Flights</button>
+            </form>
+        </section>
+
+        <section id="results">
+            <h2>Available Flights</h2>
+            <ul id="flight-list"></ul>
+        </section>
+
+        <section id="booking-container-section">
+            <!-- Booking cards will be dynamically added here -->
         </section>
     </main>
-    <script src="script.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
 
-        
-        
