@@ -8,7 +8,7 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    background-color: #007bff;
+    background-color:burlywood;
     color: white;
     padding: 10px;
 }
@@ -23,16 +23,17 @@ body {
 }
 
 #search-section, #results {
-    background: white;
+    background:burlywood;
     padding: 20px;
     margin: 20px auto;
-    width: 50%;
+    width: 80%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
     margin-bottom: 15px;
+    font-style: italic;
 }
 
 .form-group label {
@@ -41,7 +42,7 @@ body {
 }
 
 .form-group input {
-    width: 100%;
+    width: 10%;
     padding: 8px;
     margin-top: 5px;
     border-radius: 5px;
